@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: #404040;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.container {
+    margin: 1rem auto;
+    border: none;
+    position: relative;
+    width: 144rem;
+    height: 102.4rem;
+}
+
+.container .holes {
+    top: 22.4rem;
+    left: 16.7rem;
+    position: absolute;
+
+    display: grid;
+    gap: 5.3rem;
+    grid-template-areas: 
+                    "A B C D"
+                    "E F G H"
+                    "I J K L";
+
+}
+
+.container .appearing1 {
+    top: 22.4rem;
+    left: 16.7rem;
+    position: absolute;
+
+    visibility: hidden;
+
+    display: grid;
+    gap: 5.3rem;
+    grid-template-areas: 
+                    "A B C D"
+                    "E F G H"
+                    "I J K L";    
+}
+
+.container .appearing2 {
+    top: 22.4rem;
+    left: 16.7rem;
+    position: absolute;
+
+    visibility: hidden;
+
+    display: grid;
+    gap: 5.3rem;
+    grid-template-areas: 
+                    "A B C D"
+                    "E F G H"
+                    "I J K L";
+}
+
+.container .appearing3 {
+    top: 22.4rem;
+    left: 16.7rem;
+    position: absolute;
+
+    visibility: hidden;
+
+    display: grid;
+    gap: 5.3rem;
+    grid-template-areas: 
+                    "A B C D"
+                    "E F G H"
+                    "I J K L";
+}
+
+.container .disappearing1 {
+    top: 22.4rem;
+    left: 16.7rem;
+    position: absolute;
+
+    visibility: hidden;
+
+    display: grid;
+    gap: 5.3rem;
+    grid-template-areas: 
+                    "A B C D"
+                    "E F G H"
+                    "I J K L";
+}
+
+.container .disappearing2 {
+    top: 22.4rem;
+    left: 16.7rem;
+    position: absolute;
+
+    visibility: hidden;
+
+    display: grid;
+    gap: 5.3rem;
+    grid-template-areas: 
+                    "A B C D"
+                    "E F G H"
+                    "I J K L";
+}
+
+.holes img:nth-child(1) {
+    grid-area: A;
+
+}
+
+.appearing1 img:nth-child(1) {
+    grid-area: A;
+
+    animation: moleAppearing 10s 166ms forwards infinite;
+
+}
+
+.appearing2 img:nth-child(1) {
+    grid-area: A;
+
+    animation: moleAppearing 10s 333ms forwards infinite;
+
+}
+
+.appearing3 img:nth-child(1) {
+    grid-area: A;
+
+    animation: moleAppearing 10s 500ms forwards infinite;
+    
+}
+
+.disappearing1 img:nth-child(1) {
+    grid-area: A;
+
+    animation: moleAppearing 10s 666ms forwards infinite;
+    
+}
+
+.disappearing2 img:nth-child(1) {
+    grid-area: A;
+
+    animation: moleAppearing 10s 833ms forwards infinite;
+    
+}
+
+
+.holes img:nth-child(2) {
+    grid-area: B;
+    
+}
+
+.appearing1 img:nth-child(2) {
+    grid-area: B;
+
+    animation: moleAppearing2 10s calc(166ms + 11s) forwards infinite;
+
+}
+
+.appearing2 img:nth-child(2) {
+    grid-area: B;
+
+    animation: moleAppearing 10s calc(333ms + 11s) forwards infinite;
+
+}
+
+.appearing3 img:nth-child(2) {
+    grid-area: B;
+
+    animation: moleAppearing 10s calc(500ms + 11s) forwards infinite;
+   
+}
+
+.disappearing1 img:nth-child(2) {
+    grid-area: B;
+
+    animation: moleAppearing 10s calc(666ms + 11s) forwards infinite;
+   
+}
+
+.disappearing2 img:nth-child(2) {
+    grid-area: B;
+
+    animation: moleAppearing 10s calc(833ms + 11s) forwards infinite;
+    
+}
+
+
+.holes img:nth-child(3) {
+    grid-area: C;
+}
+
+.holes img:nth-child(4) {
+    grid-area: D;
+}
+
+.holes img:nth-child(5) {
+    grid-area: E;
+}
+
+.appearing1 img:nth-child(5) {
+    grid-area: E;
+
+    animation: moleAppearing2 10s calc(166ms + 3S) forwards infinite;
+
+}
+
+.appearing2 img:nth-child(5) {
+    grid-area: E;
+
+    animation: moleAppearing 10s calc(333ms + 3S) forwards infinite;
+
+}
+
+.appearing3 img:nth-child(5) {
+    grid-area: E;
+
+    animation: moleAppearing 10s calc(500ms + 3S) forwards infinite;
+   
+}
+
+.disappearing1 img:nth-child(5) {
+    grid-area: E;
+
+    animation: moleAppearing 10s calc(666ms + 3S) forwards infinite;
+   
+}
+
+.disappearing2 img:nth-child(5) {
+    grid-area: E;
+
+    animation: moleAppearing 10s calc(833ms + 3S) forwards infinite;
+    
+}
+
+.holes img:nth-child(6) {
+    grid-area: F;
+}
+
+.holes img:nth-child(7) {
+    grid-area: G;
+}
+
+.appearing1 img:nth-child(7) {
+    grid-area: G;
+
+    animation: moleAppearing2 10s calc(166ms + 7s) forwards infinite;
+
+}
+
+.appearing2 img:nth-child(7) {
+    grid-area: G;
+
+    animation: moleAppearing 10s calc(333ms + 7s) forwards infinite;
+
+}
+
+.appearing3 img:nth-child(7) {
+    grid-area: G;
+
+    animation: moleAppearing 10s calc(500ms + 7s) forwards infinite;
+   
+}
+
+.disappearing1 img:nth-child(7) {
+    grid-area: G;
+
+    animation: moleAppearing 10s calc(666ms + 7s) forwards infinite;
+   
+}
+
+.disappearing2 img:nth-child(7) {
+    grid-area: G;
+
+    animation: moleAppearing 10s calc(833ms + 7s) forwards infinite;
+    
+}
+
+.holes img:nth-child(8) {
+    grid-area: H;
+}
+
+.appearing1 img:nth-child(8) {
+    grid-area: H;
+
+    animation: moleAppearing2 10s calc(166ms + 5s) forwards infinite;
+
+}
+
+.appearing2 img:nth-child(8) {
+    grid-area: H;
+
+    animation: moleAppearing 10s calc(333ms + 5s) forwards infinite;
+
+}
+
+.appearing3 img:nth-child(8) {
+    grid-area: H;
+
+    animation: moleAppearing 10s calc(500ms + 5s) forwards infinite;
+   
+}
+
+.disappearing1 img:nth-child(8) {
+    grid-area: H;
+
+    animation: moleAppearing 10s calc(666ms + 5s) forwards infinite;
+   
+}
+
+.disappearing2 img:nth-child(8) {
+    grid-area: H;
+
+    animation: moleAppearing 10s calc(833ms + 5s) forwards infinite;
+    
+}
+
+.holes img:nth-child(9) {
+    grid-area: I;
+}
+
+.holes img:nth-child(10) {
+    grid-area: J;
+}
+
+.appearing1 img:nth-child(10) {
+    grid-area: J;
+
+    animation: moleAppearing2 10s calc(166ms + 2s) forwards infinite;
+
+}
+
+.appearing2 img:nth-child(10) {
+    grid-area: J;
+
+    animation: moleAppearing 10s calc(333ms + 2s) forwards infinite;
+
+}
+
+.appearing3 img:nth-child(10) {
+    grid-area: J;
+
+    animation: moleAppearing 10s calc(500ms + 2s) forwards infinite;
+   
+}
+
+.disappearing1 img:nth-child(10) {
+    grid-area: J;
+
+    animation: moleAppearing 10s calc(666ms + 2s) forwards infinite;
+   
+}
+
+.disappearing2 img:nth-child(10) {
+    grid-area: J;
+
+    animation: moleAppearing 10s calc(833ms + 2s) forwards infinite;
+    
+}
+
+.holes img:nth-child(11) {
+    grid-area: K;
+}
+
+.holes img:nth-child(12) {
+    grid-area: L;
+}
+
+.appearing1 img:nth-child(12) {
+    grid-area: L;
+
+    animation: moleAppearing2 10s calc(166ms + 8s) forwards infinite;
+
+}
+
+.appearing2 img:nth-child(12) {
+    grid-area: L;
+
+    animation: moleAppearing 10s calc(333ms + 8s) forwards infinite;
+
+}
+
+.appearing3 img:nth-child(12) {
+    grid-area: L;
+
+    animation: moleAppearing 10s calc(500ms + 8s) forwards infinite;
+   
+}
+
+.disappearing1 img:nth-child(12) {
+    grid-area: L;
+
+    animation: moleAppearing 10s calc(666ms + 8s) forwards infinite;
+   
+}
+
+.disappearing2 img:nth-child(12) {
+    grid-area: L;
+
+    animation: moleAppearing 10s calc(833ms + 8s) forwards infinite;
+    
+}
+
+@keyframes moleAppearing {
+    0% {
+        visibility: hidden;
+        
+    }
+
+    0.8333% {
+        visibility: visible;
+    }
+
+   
+    1.6666%, 100% {
+        visibility: hidden;
+    }
+}
+
+
