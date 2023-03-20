@@ -454,6 +454,8 @@ body {
 
     .container {
         animation: rotation linear 100ms forwards;
+        width: 100%;
+        hight: auto;
         
     }
 /* 
