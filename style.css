@@ -22,10 +22,10 @@ body {
     height: 102.4rem;
 }
 
-/* .container .background {
-    width: 100%;
+.container img {
+    width:fit-content;
     height: auto;
-} */
+}
 
 .container .holes {
     top: 22.4rem;
@@ -434,30 +434,24 @@ body {
 /* Responsive animation */
 
 @keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+
     100% {
-        transform:rotate(90deg);
+        transform: rotate(90deg);
     }
 }
 
 /* Responsivity */
 
 @media (max-width: 852px) {
-    .body {
-        margin: 0 0;
-    }
-    .container{
-        animation: rotation 100ms forwards;
-        width: 100%;
+    .container .background, .holes, .appearing1, .appearing2, .appearing3, .disappearing1, .disappearing2  {
+        animation: rotation linear 100ms forwards;
+        margin-top: 20rem;
+        /* width: 100%;
         height: auto;
-        top: 0;
+        top: 0; */
     }
 
-    .background {
-        top: 0;
-        right: 0;
-    }
-
-    /* img {
-        width: fit-content;
-    } */
 }
