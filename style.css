@@ -442,6 +442,10 @@ body {
 /* Responsivity */
 
 @media (max-width: 852px) {
+    .body {
+        margin: 0 auto;
+    }
+    
     .container{
         animation: rotation 100ms forwards;
         width: clamp(32rem, 30rem + 60vw, 85.2rem);
