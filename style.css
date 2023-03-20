@@ -448,7 +448,7 @@ body {
 
 @media (max-width: 852px) {
     body {
-        margin: 10rem auto;
+        margin: 20rem auto;
     }
 
     .container .background, .holes, .appearing1, .appearing2, .appearing3, .disappearing1, .disappearing2  {
