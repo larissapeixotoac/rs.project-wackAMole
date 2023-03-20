@@ -444,6 +444,7 @@ body {
 @media (max-width: 852px) {
     .body {
         margin: 0 auto;
+        align-items: start;
     }
     .container{
         animation: rotation 100ms forwards;
