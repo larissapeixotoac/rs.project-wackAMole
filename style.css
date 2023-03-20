@@ -22,6 +22,11 @@ body {
     height: 102.4rem;
 }
 
+/* .container .background {
+    width: 100%;
+    height: auto;
+} */
+
 .container .holes {
     top: 22.4rem;
     left: 16.7rem;
@@ -408,6 +413,8 @@ body {
     
 }
 
+/* Mole Animation */
+
 @keyframes moleAppearing {
     0% {
         visibility: hidden;
@@ -424,4 +431,24 @@ body {
     }
 }
 
+/* Responsive animation */
 
+@keyframes rotation {
+    100% {
+        transform:rotate(90deg);
+    }
+}
+
+/* Responsivity */
+
+@media (max-width: 852px) {
+    .container{
+        animation: rotation 100ms forwards;
+        width: clamp(32rem, 30rem + 60vw, 85.2rem);
+        left: 0;
+    }
+
+    img {
+        width: fit-content;
+    }
+}
