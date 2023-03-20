@@ -10,7 +10,7 @@
 
 body {
     background: #404040;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
     border-radius: 2px;
     display: flex;
 }
@@ -449,10 +449,16 @@ body {
 @media (max-width: 852px) {
     body {
         margin: 20rem auto;
+        /* text-align: center; */
     }
 
-    .container .background, .holes, .appearing1, .appearing2, .appearing3, .disappearing1, .disappearing2  {
+    .container {
         animation: rotation linear 100ms forwards;
+        
     }
+/* 
+    .container .background, .holes, .appearing1, .appearing2, .appearing3, .disappearing1, .disappearing2  {
+
+    } */
 
 }
