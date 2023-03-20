@@ -445,11 +445,15 @@ body {
     .body {
         margin: 0 auto;
     }
-    
     .container{
         animation: rotation 100ms forwards;
         width: clamp(32rem, 30rem + 60vw, 85.2rem);
         top: 0;
+    }
+
+    .background {
+        top: 0;
+        right: 0;
     }
 
     img {
