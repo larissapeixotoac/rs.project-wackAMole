@@ -448,7 +448,7 @@ body {
 
 @media (max-width: 852px) {
     body {
-        margin: 20rem auto;
+        margin: auto 20rem;
         /* text-align: center; */
     }
 
