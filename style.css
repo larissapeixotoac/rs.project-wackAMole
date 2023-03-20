@@ -448,6 +448,7 @@ body {
 @media (max-width: 852px) {
     .container .background, .holes, .appearing1, .appearing2, .appearing3, .disappearing1, .disappearing2  {
         animation: rotation linear 100ms forwards;
+        margin-top:30rem
     }
 
 }
