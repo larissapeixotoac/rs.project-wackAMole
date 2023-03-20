@@ -447,7 +447,8 @@ body {
     }
     .container{
         animation: rotation 100ms forwards;
-        width: clamp(32rem, 30rem + 60vw, 85.2rem);
+        width: 100%;
+        height: auto;
         top: 0;
     }
 
@@ -456,7 +457,7 @@ body {
         right: 0;
     }
 
-    img {
+    /* img {
         width: fit-content;
-    }
+    } */
 }
