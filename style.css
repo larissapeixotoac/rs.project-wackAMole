@@ -449,7 +449,7 @@ body {
     .container{
         animation: rotation 100ms forwards;
         width: clamp(32rem, 30rem + 60vw, 85.2rem);
-        left: 0;
+        top: 0;
     }
 
     img {
