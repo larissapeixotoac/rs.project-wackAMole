@@ -12,13 +12,14 @@ body {
     background: #404040;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 2px;
+    display: flex;
 }
 
 .container {
-    margin: 1rem auto;
+    margin: 0 auto;
     border: none;
     position: relative;
-    width: 144rem;
+    /* width: 144rem; */
     height: 102.4rem;
 }
 
@@ -446,9 +447,12 @@ body {
 /* Responsivity */
 
 @media (max-width: 852px) {
+    body {
+        margin: 10rem auto;
+    }
+
     .container .background, .holes, .appearing1, .appearing2, .appearing3, .disappearing1, .disappearing2  {
         animation: rotation linear 100ms forwards;
-        margin-top:30rem
     }
 
 }
